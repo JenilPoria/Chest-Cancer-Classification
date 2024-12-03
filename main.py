@@ -50,7 +50,7 @@ except Exception as e:
 
 
 
-# dagshub.init(repo_owner='JenilPoria', repo_name='Chest-Cancer-Classification', mlflow=True)
+dagshub.init(repo_owner='JenilPoria', repo_name='Chest-Cancer-Classification', mlflow=True)
 # model = tf.keras.models.load_model("artifacts/training/model.h5")
 
 STAGE_NAME = "Evaluation stage"
