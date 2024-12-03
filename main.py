@@ -4,6 +4,7 @@ from src.CnnClassifier.pipeline.stage_02_prepare_base_model import PrepareBaseMo
 from src.CnnClassifier.pipeline.stage_03_model_trainer import ModelTrainingPipeline
 from src.CnnClassifier.pipeline.stage_04_model_evaluation import EvaluationPipeline
 import dagshub
+import tensorflow as tf
 
 
 
@@ -49,7 +50,8 @@ except Exception as e:
 
 
 
-dagshub.init(repo_owner='JenilPoria', repo_name='Chest-Cancer-Classification', mlflow=True)
+# dagshub.init(repo_owner='JenilPoria', repo_name='Chest-Cancer-Classification', mlflow=True)
+# model = tf.keras.models.load_model("artifacts/training/model.h5")
 
 STAGE_NAME = "Evaluation stage"
 try:
